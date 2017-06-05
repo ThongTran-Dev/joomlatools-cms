@@ -6,8 +6,6 @@ language: php
 env:
   global:
     - RUN_PHPCS="no"
-    - RUN_UNIT_TESTS="yes"
-    - RUN_JAVASCRIPT_TESTS="no"
     - INSTALL_MEMCACHE="yes"
     - INSTALL_MEMCACHED="yes"
     - INSTALL_REDIS="yes"
