@@ -348,7 +348,6 @@ class JoomlaInstallerScript
 			array('plugin', 'urlinstaller','installer', 0),
 
 			// Templates
-			array('template', 'beez3', '', 0),
 			array('template', 'protostar', '', 0),
 			array('template', 'isis', '', 1),
 
