@@ -759,7 +759,6 @@ class InstallationModelDatabase extends JModelBase
 		// categories (created_user_id), contact_details, content, newsfeeds.
 		$updates_array = array(
 			'categories'      => 'created_user_id',
-			'contact_details' => 'created_by',
 			'content'         => 'created_by',
 			'newsfeeds'       => 'created_by',
 			'tags'            => 'created_user_id',
