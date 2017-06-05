@@ -213,7 +213,6 @@ class JoomlaInstallerScript
 			// Components
 			// `type`, `element`, `folder`, `client_id`
 			array('component', 'com_mailto', '', 0),
-			array('component', 'com_wrapper', '', 0),
 			array('component', 'com_admin', '', 1),
 			array('component', 'com_ajax', '', 1),
 			array('component', 'com_cache', '', 1),
@@ -265,7 +264,6 @@ class JoomlaInstallerScript
 			array('module', 'mod_syndicate', '', 0),
 			array('module', 'mod_users_latest', '', 0),
 			array('module', 'mod_whosonline', '', 0),
-			array('module', 'mod_wrapper', '', 0),
 			array('module', 'mod_articles_category', '', 0),
 			array('module', 'mod_articles_categories', '', 0),
 			array('module', 'mod_languages', '', 0),
@@ -1402,7 +1400,6 @@ class JoomlaInstallerScript
 			'/libraries/classloader.php',
 			'/libraries/ClassLoader.php',
 			// Joomla 3.4.6
-			'/components/com_wrapper/views/wrapper/metadata.xml',
 			// Joomla 3.5.0
 			'/media/com_joomlaupdate/default.js',
 			'/media/com_joomlaupdate/encryption.js',
