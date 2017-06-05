@@ -216,7 +216,6 @@ class JoomlaInstallerScript
 			array('component', 'com_wrapper', '', 0),
 			array('component', 'com_admin', '', 1),
 			array('component', 'com_ajax', '', 1),
-			array('component', 'com_banners', '', 1),
 			array('component', 'com_cache', '', 1),
 			array('component', 'com_categories', '', 1),
 			array('component', 'com_checkin', '', 1),
@@ -1104,7 +1103,6 @@ class JoomlaInstallerScript
 			'/media/editors/tinymce/jscripts/tiny_mce/utils/form_utils.js',
 			'/media/editors/tinymce/jscripts/tiny_mce/utils/mctabs.js',
 			'/media/editors/tinymce/jscripts/tiny_mce/utils/validate.js',
-			'/administrator/components/com_banners/models/fields/ordering.php',
 			'/administrator/components/com_contact/models/fields/ordering.php',
 			'/administrator/components/com_newsfeeds/models/fields/ordering.php',
 			'/administrator/components/com_plugins/models/fields/ordering.php',
@@ -1566,7 +1564,6 @@ class JoomlaInstallerScript
 			'/libraries/phpmailer',
 			'/media/editors/codemirror/css',
 			'/media/editors/codemirror/js',
-			'/media/com_banners',
 			// Joomla! 3.4.1
 			'/administrator/components/com_config/views',
 			'/administrator/components/com_config/models/fields',
