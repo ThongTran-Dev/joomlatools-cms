@@ -349,7 +349,6 @@ class JoomlaInstallerScript
 
 			// Templates
 			array('template', 'beez3', '', 0),
-			array('template', 'hathor', '', 1),
 			array('template', 'protostar', '', 0),
 			array('template', 'isis', '', 1),
 
@@ -526,9 +525,6 @@ class JoomlaInstallerScript
 			'/administrator/includes/router.php',
 			'/administrator/manifests/packages/pkg_joomla.xml',
 			'/administrator/modules/mod_submenu/helper.php',
-			'/administrator/templates/hathor/css/ie6.css',
-			'/administrator/templates/hathor/html/mod_submenu/index.html',
-			'/administrator/templates/hathor/html/mod_submenu/default.php',
 			'/components/com_media/controller.php',
 			'/components/com_media/helpers/index.html',
 			'/components/com_media/helpers/media.php',
@@ -1182,8 +1178,6 @@ class JoomlaInstallerScript
 			'/administrator/components/com_tags/helpers/html/index.html',
 			'/administrator/components/com_tags/models/fields/index.html',
 			'/administrator/manifests/libraries/phpmailer.xml',
-			'/administrator/templates/hathor/html/com_finder/filter/index.html',
-			'/administrator/templates/hathor/html/com_finder/statistics/index.html',
 			'/components/com_contact/helpers/icon.php',
 			'/language/en-GB/en-GB.lib_phpmailer.sys.ini',
 			'/libraries/compat/jsonserializable.php',
@@ -1404,8 +1398,6 @@ class JoomlaInstallerScript
 			'/administrator/components/com_config/models/forms/index.html',
 			// Joomla 3.4.2
 			'/libraries/composer_autoload.php',
-			'/administrator/templates/hathor/html/com_categories/categories/default_batch.php',
-			'/administrator/templates/hathor/html/com_tags/tags/default_batch.php',
 			'/media/editors/codemirror/mode/clike/scala.html',
 			'/media/editors/codemirror/mode/css/less.html',
 			'/media/editors/codemirror/mode/css/less_test.js',
@@ -1446,7 +1438,7 @@ class JoomlaInstallerScript
 			'/media/editors/tinymce/plugins/compat3x/editable_selects.js',
 			'/media/editors/tinymce/plugins/compat3x/form_utils.js',
 			'/media/editors/tinymce/plugins/compat3x/mctabs.js',
-			'/media/editors/tinymce/plugins/compat3x/tiny_mce_popup.js', 
+			'/media/editors/tinymce/plugins/compat3x/tiny_mce_popup.js',
 			'/media/editors/tinymce/plugins/compat3x/validate.js',
 			'/libraries/vendor/symfony/yaml/Symfony/Component/Yaml/Dumper.php',
 			'/libraries/vendor/symfony/yaml/Symfony/Component/Yaml/Escaper.php',
@@ -1556,8 +1548,6 @@ class JoomlaInstallerScript
 			// Joomla! 3.4
 			'/administrator/components/com_tags/helpers/html',
 			'/administrator/components/com_tags/models/fields',
-			'/administrator/templates/hathor/html/com_finder/filter',
-			'/administrator/templates/hathor/html/com_finder/statistics',
 			'/libraries/compat/password/lib',
 			'/libraries/compat/password',
 			'/libraries/compat',
