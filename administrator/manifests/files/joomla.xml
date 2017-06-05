@@ -24,9 +24,7 @@
 	<fileset>
 		<files>
 			<folder>administrator</folder>
-			<folder>bin</folder>
 			<folder>cache</folder>
-			<folder>cli</folder>
 			<folder>components</folder>
 			<folder>images</folder>
 			<folder>includes</folder>
