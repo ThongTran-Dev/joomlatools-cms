@@ -240,7 +240,6 @@ system('zip -r ../packages_full' . $fullVersion . '/Joomla_' . $fullVersion . '-
 echo "Build full update package.\n";
 system('rm -r administrator/logs');
 system('rm -r installation');
-system('rm -r images/banners');
 system('rm -r images/headers');
 system('rm -r images/sampledata');
 system('rm images/joomla_black.png');
