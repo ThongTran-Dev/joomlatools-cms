@@ -19,8 +19,6 @@ composer install
 # Setup databases for testing
 mysql -u root -e 'create database joomla_ut;'
 mysql -u root joomla_ut < "$BASE/tests/unit/schema/mysql.sql"
-psql -c 'create database joomla_ut;' -U postgres
-psql -d joomla_ut -a -f "$BASE/tests/unit/schema/postgresql.sql"
 
 # Set up Apache
 # - ./build/travis/php-apache.sh
