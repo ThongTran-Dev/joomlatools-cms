@@ -2,7 +2,7 @@
 
 <project name="joomla" default="build" basedir=".">
 	<property name="source" value="." />
-	<property name="joomlasource" value="administrator,cli,components,includes,installation,language/en-GB,libraries/cms,modules,plugins,templates" />
+	<property name="joomlasource" value="administrator,components,includes,installation,language/en-GB,libraries/cms,modules,plugins,templates" />
 
 	<target name="clean" description="Clean up and create artifact directories">
 		<delete dir="${basedir}/build/api" />
@@ -93,11 +93,6 @@
 			<arg value="-l" />
 
 			<fileset dir="${basedir}/administrator">
-				<include name="**/*.php" />
-				<modified />
-			</fileset>
-
-			<fileset dir="${basedir}/cli">
 				<include name="**/*.php" />
 				<modified />
 			</fileset>
