@@ -439,10 +439,6 @@ class InstallationModelDatabase extends JModelBase
 		{
 			$schema = 'sql/mysql/joomla.sql';
 		}
-		elseif ($type == 'sqlsrv' || $type == 'sqlazure')
-		{
-			$schema = 'sql/sqlazure/joomla.sql';
-		}
 		else
 		{
 			$schema = 'sql/' . $type . '/joomla.sql';
@@ -493,10 +489,6 @@ class InstallationModelDatabase extends JModelBase
 		if (($type == 'mysql') || ($type == 'mysqli') || ($type == 'pdomysql'))
 		{
 			$pathPart .= 'mysql/';
-		}
-		elseif ($type == 'sqlsrv' || $type == 'sqlazure')
-		{
-			$pathPart .= 'sqlazure/';
 		}
 		else
 		{
@@ -579,10 +571,6 @@ class InstallationModelDatabase extends JModelBase
 		if (($type == 'mysql') || ($type == 'mysqli') || ($type == 'pdomysql'))
 		{
 			$dblocalise = 'sql/mysql/localise.sql';
-		}
-		elseif ($type == 'sqlsrv' || $type == 'sqlazure')
-		{
-			$dblocalise = 'sql/sqlazure/localise.sql';
 		}
 		else
 		{
@@ -673,10 +661,6 @@ class InstallationModelDatabase extends JModelBase
 		if ($type == 'mysqli' || $type == 'pdomysql')
 		{
 			$type = 'mysql';
-		}
-		elseif ($type == 'sqlsrv')
-		{
-			$type = 'sqlazure';
 		}
 
 		$data = JPATH_INSTALLATION . '/sql/' . $type . '/' . $options->sample_file;
