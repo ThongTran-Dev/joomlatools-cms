@@ -9,21 +9,6 @@
 
 defined('_JEXEC') or die;
 
-$renderer = JFactory::getDocument()->loadRenderer('module');
-$options  = array('style' => 'raw');
-$mod      = JModuleHelper::getModule('mod_feed');
-$param    = array(
-		"rssurl" => "https://www.joomla.org/announcements/release-news.feed?type=rss",
-		"rsstitle" => 0,
-		"rssdesc" => 0,
-		"rssimage" => 1,
-		"rssitems" => 5,
-		"rssitemdesc" => 1,
-		"word_count" => 200,
-		"cache" => 0,
-	);
-$params = array('params' => json_encode($param));
-
 JHtml::_('formbehavior.chosen', 'select');
 ?>
 
@@ -68,12 +53,4 @@ JHtml::_('formbehavior.chosen', 'select');
 		</div>
 	</fieldset>
 	<?php endforeach; ?>
-<?php if ($this->eid == 700) : ?>
-	</div>
-	<div class="span4">
-		<h2><?php echo JText::_('COM_POSTINSTALL_LBL_RELEASENEWS'); ?></h2>
-		<?php echo $renderer->render($mod, $params, $options); ?>
-	</div>
-</div>
-<?php endif; ?>
 <?php endif; ?>
