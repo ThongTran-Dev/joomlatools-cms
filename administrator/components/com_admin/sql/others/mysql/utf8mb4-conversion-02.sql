@@ -48,7 +48,7 @@ ALTER TABLE `#__users` MODIFY `name` varchar(400) NOT NULL DEFAULT '';
 --
 -- Step 2.2: Convert all tables to utf8mb4 chracter set with utf8mb4_unicode_ci collation
 -- except #__finder_xxx tables, those will have utf8mb4_general_ci collation.
--- Note: The database driver for mysql will change utf8mb4 to utf8 if utf8mb4 is not supported     
+-- Note: The database driver for mysql will change utf8mb4 to utf8 if utf8mb4 is not supported
 --
 
 ALTER TABLE `#__assets` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -114,7 +114,6 @@ ALTER TABLE `#__update_sites_extensions` CONVERT TO CHARACTER SET utf8mb4 COLLAT
 ALTER TABLE `#__usergroups` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE `#__users` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE `#__user_keys` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-ALTER TABLE `#__user_notes` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE `#__user_profiles` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE `#__user_usergroup_map` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE `#__utf8_conversion` CONVERT TO CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -202,7 +201,6 @@ ALTER TABLE `#__update_sites_extensions` DEFAULT CHARACTER SET utf8mb4 COLLATE u
 ALTER TABLE `#__usergroups` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE `#__users` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE `#__user_keys` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-ALTER TABLE `#__user_notes` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE `#__user_profiles` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE `#__user_usergroup_map` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 ALTER TABLE `#__utf8_conversion` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
