@@ -756,11 +756,10 @@ class InstallationModelDatabase extends JModelBase
 		$userId = self::getUserId();
 
 		// Update all created_by field of the tables with the random user id
-		// categories (created_user_id), contact_details, content, newsfeeds.
+		// categories (created_user_id), content
 		$updates_array = array(
 			'categories'      => 'created_user_id',
 			'content'         => 'created_by',
-			'newsfeeds'       => 'created_by',
 			'tags'            => 'created_user_id',
 			'ucm_content'     => 'core_created_user_id',
 			'ucm_history'     => 'editor_user_id',
