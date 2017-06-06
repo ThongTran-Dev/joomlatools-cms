@@ -64,11 +64,3 @@ if ($im || $mm || $pm || $tm || $lm)
 {
 	$menu->addChild(new JMenuNode(JText::_('MOD_MENU_EXTENSIONS_EXTENSIONS'), null, 'disabled'));
 }
-
-/**
- * Help Submenu
- */
-if ($params->get('showhelp', 1))
-{
-	$menu->addChild(new JMenuNode(JText::_('MOD_MENU_HELP'), null, 'disabled'));
-}

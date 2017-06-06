@@ -46,17 +46,6 @@
 				</field>
 
 				<field
-					name="showhelp"
-					type="radio"
-					class="btn-group btn-group-yesno"
-					default="1"
-					label="MOD_MENU_FIELD_SHOWHELP"
-					description="MOD_MENU_FIELD_SHOWHELP_DESC">
-					<option value="0">JHIDE</option>
-					<option value="1">JSHOW</option>
-				</field>
-
-				<field
 					name="forum_url"
 					type="url"
 					filter="url"
