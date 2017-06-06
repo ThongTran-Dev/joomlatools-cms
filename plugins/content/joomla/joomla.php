@@ -47,7 +47,6 @@ class PlgContentJoomla extends JPlugin
 
 		$tableInfo = array(
 			'com_content' => array('table_name' => '#__content'),
-			'com_weblinks' => array('table_name' => '#__weblinks')
 		);
 
 		// Now check to see if this is a known core extension

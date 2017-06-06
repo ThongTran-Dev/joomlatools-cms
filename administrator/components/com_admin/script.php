@@ -1085,7 +1085,6 @@ class JoomlaInstallerScript
 			'/media/editors/tinymce/jscripts/tiny_mce/utils/mctabs.js',
 			'/media/editors/tinymce/jscripts/tiny_mce/utils/validate.js',
 			'/administrator/components/com_plugins/models/fields/ordering.php',
-			'/administrator/components/com_weblinks/models/fields/ordering.php',
 			'/administrator/includes/application.php',
 			'/includes/application.php',
 			'/libraries/legacy/application/helper.php',
@@ -1128,8 +1127,7 @@ class JoomlaInstallerScript
 			'/media/editors/codemirror/js/tokenizejavascript.js',
 			'/media/editors/codemirror/js/tokenizephp.js',
 			'/media/editors/codemirror/js/undo.js',
-			'/media/editors/codemirror/js/util.js',
-			'/administrator/components/com_weblinks/models/fields/index.html',
+			'/media/editors/codemirror/js/util.js'
 			'/plugins/user/joomla/postinstall/actions.php',
 			'/plugins/user/joomla/postinstall/index.html',
 			'/media/com_finder/js/finder.js',
