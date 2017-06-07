@@ -104,7 +104,7 @@ class TagsViewTag extends JViewLegacy
 			{
 				JToolbarHelper::apply('tag.apply');
 				JToolbarHelper::save('tag.save');
-	
+
 				if ($canDo->get('core.create'))
 				{
 					JToolbarHelper::save2new('tag.save2new');
@@ -125,8 +125,6 @@ class TagsViewTag extends JViewLegacy
 			JToolbarHelper::cancel('tag.cancel', 'JTOOLBAR_CLOSE');
 		}
 
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_COMPONENTS_TAGS_MANAGER_EDIT');
 		JToolbarHelper::divider();
 	}
 }

@@ -203,37 +203,5 @@ class CategoriesViewCategory extends JViewLegacy
 
 			JToolbarHelper::cancel('category.cancel', 'JTOOLBAR_CLOSE');
 		}
-
-		JToolbarHelper::divider();
-
-		// Compute the ref_key
-		$ref_key = strtoupper($component . ($section ? "_$section" : '')) . '_CATEGORY_' . ($isNew ? 'ADD' : 'EDIT') . '_HELP_KEY';
-
-		// Check if thr computed ref_key does exist in the component
-		if (!$lang->hasKey($ref_key))
-		{
-			$ref_key = 'JHELP_COMPONENTS_'
-						. strtoupper(substr($component, 4) . ($section ? "_$section" : ''))
-						. '_CATEGORY_' . ($isNew ? 'ADD' : 'EDIT');
-		}
-
-		/*
-		 * Get help for the category/section view for the component by
-		 * -remotely searching in a language defined dedicated URL: *component*_HELP_URL
-		 * -locally  searching in a component help file if helpURL param exists in the component and is set to ''
-		 * -remotely searching in a component URL if helpURL param exists in the component and is NOT set to ''
-		 */
-		if ($lang->hasKey($lang_help_url = strtoupper($component) . '_HELP_URL'))
-		{
-			$debug = $lang->setDebug(false);
-			$url = JText::_($lang_help_url);
-			$lang->setDebug($debug);
-		}
-		else
-		{
-			$url = null;
-		}
-
-		JToolbarHelper::help($ref_key, $componentParams->exists('helpURL'), $url, $component);
 	}
 }

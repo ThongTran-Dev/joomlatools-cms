@@ -128,11 +128,10 @@ class FinderViewMaps extends JViewLegacy
 			550,
 			350
 		);
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_COMPONENTS_FINDER_MANAGE_CONTENT_MAPS');
 
 		if ($canDo->get('core.delete'))
 		{
+			JToolbarHelper::divider();
 			JToolbarHelper::deleteList('', 'maps.delete');
 			JToolbarHelper::divider();
 		}

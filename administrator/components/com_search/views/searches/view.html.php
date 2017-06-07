@@ -97,8 +97,5 @@ class SearchViewSearches extends JViewLegacy
 		{
 			JToolbarHelper::preferences('com_search');
 		}
-
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_COMPONENTS_SEARCH');
 	}
 }

@@ -36,7 +36,7 @@ class ModulesModelModule extends JModelAdmin
 	 * @var    string  The help screen key for the module.
 	 * @since  1.6
 	 */
-	protected $helpKey = 'JHELP_EXTENSIONS_MODULE_MANAGER_EDIT';
+	protected $helpKey = '';
 
 	/**
 	 * @var    string  The help screen base URL for the module.

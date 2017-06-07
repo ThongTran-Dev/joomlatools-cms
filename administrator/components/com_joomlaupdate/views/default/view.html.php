@@ -82,9 +82,6 @@ class JoomlaupdateViewDefault extends JViewLegacy
 			JToolbarHelper::preferences('com_joomlaupdate');
 		}
 
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_COMPONENTS_JOOMLA_UPDATE');
-
 		if (!is_null($this->updateInfo['object']))
 		{
 			// Show the message if an update is found.

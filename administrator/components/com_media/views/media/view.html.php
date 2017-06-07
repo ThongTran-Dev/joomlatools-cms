@@ -108,10 +108,7 @@ class MediaViewMedia extends JViewLegacy
 		if ($user->authorise('core.admin', 'com_media') || $user->authorise('core.options', 'com_media'))
 		{
 			JToolbarHelper::preferences('com_media');
-			JToolbarHelper::divider();
 		}
-
-		JToolbarHelper::help('JHELP_CONTENT_MEDIA_MANAGER');
 	}
 
 	/**

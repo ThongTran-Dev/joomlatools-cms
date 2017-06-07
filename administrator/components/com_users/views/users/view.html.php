@@ -39,7 +39,7 @@ class UsersViewUsers extends JViewLegacy
 	 * @since 1.6
 	 */
 	protected $state;
-	
+
 	/**
 	 * A JForm instance with filter fields.
 	 *
@@ -55,7 +55,7 @@ class UsersViewUsers extends JViewLegacy
 	 * @since  3.6.3
 	 */
 	public $activeFilters;
-	
+
 	/**
 	 * An ACL object to verify user rights.
 	 *
@@ -63,7 +63,7 @@ class UsersViewUsers extends JViewLegacy
 	 * @since  3.6.3
 	 */
 	 protected $canDo;
-	
+
 	/**
 	 * An instance of JDatabaseDriver.
 	 *
@@ -169,8 +169,6 @@ class UsersViewUsers extends JViewLegacy
 			JToolbarHelper::preferences('com_users');
 			JToolbarHelper::divider();
 		}
-
-		JToolbarHelper::help('JHELP_USERS_USER_MANAGER');
 	}
 
 	/**

@@ -102,7 +102,6 @@ class LanguagesViewInstalled extends JViewLegacy
 		if ($canDo->get('core.edit.state'))
 		{
 			JToolbarHelper::makeDefault('installed.setDefault');
-			JToolbarHelper::divider();
 		}
 
 		if ($canDo->get('core.admin'))
@@ -121,10 +120,7 @@ class LanguagesViewInstalled extends JViewLegacy
 			JToolbarHelper::divider();
 
 			JToolbarHelper::preferences('com_languages');
-			JToolbarHelper::divider();
 		}
-
-		JToolbarHelper::help('JHELP_EXTENSIONS_LANGUAGE_MANAGER_INSTALLED');
 
 		$this->sidebar = JHtmlSidebar::render();
 	}

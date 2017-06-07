@@ -87,8 +87,5 @@ class LanguagesViewLanguage extends JViewLegacy
 		{
 			JToolbarHelper::cancel('language.cancel', 'JTOOLBAR_CLOSE');
 		}
-
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_EXTENSIONS_LANGUAGE_MANAGER_EDIT');
 	}
 }

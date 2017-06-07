@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
 	<layout title="com_content_article_view_default_title" option="com_content_article_view_default_option">
-		<help
-			key = "JHELP_MENUS_MENU_ITEM_ARTICLE_SINGLE_ARTICLE"
-		/>
+
 		<message>
 			<![CDATA[com_content_article_view_default_desc]]>
 		</message>
@@ -51,8 +49,8 @@
 			<option value="0">JNO</option>
 		</field>
 
-		<field 
-			name="show_intro" 
+		<field
+			name="show_intro"
 			type="list"
 			description="JGLOBAL_SHOW_INTRO_DESC"
 			label="JGLOBAL_SHOW_INTRO_LABEL">

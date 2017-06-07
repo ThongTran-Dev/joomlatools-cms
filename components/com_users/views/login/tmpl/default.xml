@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
 	<layout title="com_user_login_view_default_title" option="com_user_login_view_default_option">
-		<help
-			key = "JHELP_MENUS_MENU_ITEM_USER_LOGIN"
-		/>
 		<message>
 			<![CDATA[COM_USER_LOGIN_VIEW_DEFAULT_DESC]]>
 		</message>
@@ -108,7 +105,7 @@
 		message="COM_USERS_FIELD_LOGOUT_REDIRECT_ERROR"
 		showon="logoutredirectchoice:0"
 		/>
-		
+
 		<field
 			name="logout_redirect_menuitem"
 			type="menuitem"

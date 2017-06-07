@@ -141,8 +141,6 @@ class TagsViewTags extends JViewLegacy
 		{
 			JToolbarHelper::preferences('com_tags');
 		}
-
-		JToolbarHelper::help('JHELP_COMPONENTS_TAGS_MANAGER');
 	}
 
 	/**

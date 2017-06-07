@@ -148,8 +148,5 @@ class RedirectViewLinks extends JViewLegacy
 			JToolbarHelper::preferences('com_redirect');
 			JToolbarHelper::divider();
 		}
-
-		JToolbarHelper::help('JHELP_COMPONENTS_REDIRECT_MANAGER');
-
 	}
 }

@@ -90,7 +90,5 @@ class RedirectViewLink extends JViewLegacy
 		{
 			JToolbarHelper::cancel('link.cancel', 'JTOOLBAR_CLOSE');
 		}
-
-		JToolbarHelper::help('JHELP_COMPONENTS_REDIRECT_MANAGER_EDIT');
 	}
 }

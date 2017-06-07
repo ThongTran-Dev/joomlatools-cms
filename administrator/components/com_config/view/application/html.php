@@ -93,7 +93,5 @@ class ConfigViewApplicationHtml extends ConfigViewCmsHtml
 		JToolbarHelper::save('config.save.application.save');
 		JToolbarHelper::divider();
 		JToolbarHelper::cancel('config.cancel.application');
-		JToolbarHelper::divider();
-		JToolbarHelper::help('JHELP_SITE_GLOBAL_CONFIGURATION');
 	}
 }

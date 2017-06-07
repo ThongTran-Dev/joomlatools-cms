@@ -316,8 +316,6 @@ class MenusViewItems extends JViewLegacy
 			JToolbarHelper::divider();
 			JToolbarHelper::preferences('com_menus');
 		}
-
-		JToolbarHelper::help('JHELP_MENUS_MENU_ITEM_MANAGER');
 	}
 
 	/**
