@@ -234,7 +234,6 @@ class JoomlaInstallerScript
 			array('component', 'com_finder', '', 1),
 			array('component', 'com_tags', '', 1),
 			array('component', 'com_contenthistory', '', 1),
-			array('component', 'com_postinstall', '', 1),
 			array('component', 'com_joomlaupdate', '', 1),
 
 			// Libraries
@@ -1126,8 +1125,6 @@ class JoomlaInstallerScript
 			'/media/editors/codemirror/js/tokenizephp.js',
 			'/media/editors/codemirror/js/undo.js',
 			'/media/editors/codemirror/js/util.js',
-			'/plugins/user/joomla/postinstall/actions.php',
-			'/plugins/user/joomla/postinstall/index.html',
 			'/media/com_finder/js/finder.js',
 			'/media/com_finder/js/highlighter.js',
 			'/libraries/joomla/registry/format.php',
@@ -1507,7 +1504,6 @@ class JoomlaInstallerScript
 			'/libraries/legacy/component',
 			'/libraries/legacy/module',
 			'/administrator/components/com_weblinks/models/fields',
-			'/plugins/user/joomla/postinstall',
 			'/libraries/joomla/registry/format',
 			'/libraries/joomla/registry',
 			// Joomla! 3.3
@@ -1630,7 +1626,6 @@ class JoomlaInstallerScript
 			'com_tags',
 			'com_contenthistory',
 			'com_ajax',
-			'com_postinstall'
 		);
 
 		foreach ($newComponents as $component)
