@@ -50,7 +50,6 @@ class InstallationModelSetup extends JModelBase
 
 		// Get the session
 		$session = JFactory::getSession();
-		$options['helpurl'] = $session->get('setup.helpurl', null);
 
 		// Merge the new setup options into the current ones and store in the session.
 		$options = array_merge($old, (array) $options);
