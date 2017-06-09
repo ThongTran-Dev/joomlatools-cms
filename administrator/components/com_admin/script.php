@@ -231,7 +231,6 @@ class JoomlaInstallerScript
 			array('component', 'com_config', '', 1),
 			array('component', 'com_redirect', '', 1),
 			array('component', 'com_users', '', 1),
-			array('component', 'com_finder', '', 1),
 			array('component', 'com_tags', '', 1),
 			array('component', 'com_contenthistory', '', 1),
 			array('component', 'com_joomlaupdate', '', 1),
@@ -319,9 +318,6 @@ class JoomlaInstallerScript
 			array('plugin', 'joomlaupdate', 'quickicon', 0),
 			array('plugin', 'extensionupdate', 'quickicon', 0),
 			array('plugin', 'recaptcha', 'captcha', 0),
-			array('plugin', 'categories', 'finder', 0),
-			array('plugin', 'content', 'finder', 0),
-			array('plugin', 'tags', 'finder', 0),
 			array('plugin', 'module', 'editors-xtd', 0),
 			array('plugin', 'stats', 'system', 0),
 			array('plugin', 'packageinstaller','installer',0),
@@ -410,8 +406,6 @@ class JoomlaInstallerScript
 			'/administrator/components/com_content/models/fields/filters.php',
 			'/administrator/components/com_users/controllers/config.php',
 			'/administrator/components/com_users/helpers/levels.php',
-			'/administrator/language/en-GB/en-GB.plg_system_finder.ini',
-			'/administrator/language/en-GB/en-GB.plg_system_finder.sys.ini',
 			'/administrator/modules/mod_quickicon/tmpl/default_button.php',
 			'/media/editors/tinymce/jscripts/tiny_mce/plugins/advhr/editor_plugin_src.js',
 			'/media/editors/tinymce/jscripts/tiny_mce/plugins/advimage/editor_plugin_src.js',
@@ -451,9 +445,6 @@ class JoomlaInstallerScript
 			'/media/editors/tinymce/jscripts/tiny_mce/themes/advanced/editor_template_src.js',
 			'/media/editors/tinymce/jscripts/tiny_mce/themes/simple/editor_template_src.js',
 			'/media/editors/tinymce/jscripts/tiny_mce/tiny_mce_src.js',
-			'/media/com_finder/images/calendar.png',
-			'/media/com_finder/images/mime/index.html',
-			'/media/com_finder/images/mime/pdf.png',
 			'/components/com_media/controller.php',
 			'/components/com_media/helpers/index.html',
 			'/components/com_media/helpers/media.php',
@@ -1121,8 +1112,6 @@ class JoomlaInstallerScript
 			'/media/editors/codemirror/js/tokenizephp.js',
 			'/media/editors/codemirror/js/undo.js',
 			'/media/editors/codemirror/js/util.js',
-			'/media/com_finder/js/finder.js',
-			'/media/com_finder/js/highlighter.js',
 			'/libraries/joomla/registry/format.php',
 			'/libraries/joomla/registry/index.html',
 			'/libraries/joomla/registry/registry.php',
@@ -1369,10 +1358,6 @@ class JoomlaInstallerScript
 			'/media/com_joomlaupdate/encryption.js',
 			'/media/com_joomlaupdate/json2.js',
 			'/media/com_joomlaupdate/update.js',
-			'/media/com_finder/css/finder-rtl.css',
-			'/media/com_finder/css/selectfilter.css',
-			'/media/com_finder/css/sliderfilter.css',
-			'/media/com_finder/js/sliderfilter.js',
 			'/media/editors/codemirror/mode/kotlin/kotlin.js',
 			'/media/editors/codemirror/mode/kotlin/kotlin.min.js',
 			'/media/editors/tinymce/plugins/compat3x/editable_selects.js',
@@ -1432,9 +1417,6 @@ class JoomlaInstallerScript
 
 		// TODO There is an issue while deleting folders using the ftp mode
 		$folders = array(
-			'/administrator/components/com_admin/sql/updates/sqlsrv',
-			'/media/com_finder/images/mime',
-			'/media/com_finder/images',
 			'/components/com_media/helpers',
 			// Joomla 3.0
 			'/administrator/components/com_content/elements',
@@ -1588,7 +1570,6 @@ class JoomlaInstallerScript
 	{
 		// List all components added since 1.6
 		$newComponents = array(
-			'com_finder',
 			'com_joomlaupdate',
 			'com_tags',
 			'com_contenthistory',

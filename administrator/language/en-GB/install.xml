@@ -29,8 +29,6 @@
 		<filename>en-GB.com_contenthistory.sys.ini</filename>
 		<filename>en-GB.com_cpanel.ini</filename>
 		<filename>en-GB.com_cpanel.sys.ini</filename>
-		<filename>en-GB.com_finder.ini</filename>
-		<filename>en-GB.com_finder.sys.ini</filename>
 		<filename>en-GB.com_installer.ini</filename>
 		<filename>en-GB.com_installer.sys.ini</filename>
 		<filename>en-GB.com_joomlaupdate.ini</filename>
@@ -102,8 +100,6 @@
 		<filename>en-GB.plg_content_contact.sys.ini</filename>
 		<filename>en-GB.plg_content_emailcloak.ini</filename>
 		<filename>en-GB.plg_content_emailcloak.sys.ini</filename>
-		<filename>en-GB.plg_content_finder.ini</filename>
-		<filename>en-GB.plg_content_finder.sys.ini</filename>
 		<filename>en-GB.plg_content_joomla.ini</filename>
 		<filename>en-GB.plg_content_joomla.sys.ini</filename>
 		<filename>en-GB.plg_content_loadmodule.ini</filename>
@@ -132,16 +128,6 @@
 		<filename>en-GB.plg_editors-xtd_readmore.sys.ini</filename>
 		<filename>en-GB.plg_extension_joomla.ini</filename>
 		<filename>en-GB.plg_extension_joomla.sys.ini</filename>
-		<filename>en-GB.plg_finder_categories.ini</filename>
-		<filename>en-GB.plg_finder_categories.sys.ini</filename>
-		<filename>en-GB.plg_finder_contacts.ini</filename>
-		<filename>en-GB.plg_finder_contacts.sys.ini</filename>
-		<filename>en-GB.plg_finder_content.ini</filename>
-		<filename>en-GB.plg_finder_content.sys.ini</filename>
-		<filename>en-GB.plg_finder_newsfeeds.ini</filename>
-		<filename>en-GB.plg_finder_newsfeeds.sys.ini</filename>
-		<filename>en-GB.plg_finder_tags.ini</filename>
-		<filename>en-GB.plg_finder_tags.sys.ini</filename>
 		<filename>en-GB.plg_installer_folderinstaller.ini</filename>
 		<filename>en-GB.plg_installer_folderinstaller.sys.ini</filename>
 		<filename>en-GB.plg_installer_packageinstaller.ini</filename>

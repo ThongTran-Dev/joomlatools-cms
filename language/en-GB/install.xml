@@ -14,7 +14,6 @@
 		<filename>en-GB.com_ajax.ini</filename>
 		<filename>en-GB.com_config.ini</filename>
 		<filename>en-GB.com_content.ini</filename>
-		<filename>en-GB.com_finder.ini</filename>
 		<filename>en-GB.com_media.ini</filename>
 		<filename>en-GB.com_search.ini</filename>
 		<filename>en-GB.com_tags.ini</filename>
@@ -45,8 +44,6 @@
 		<filename>en-GB.mod_breadcrumbs.sys.ini</filename>
 		<filename>en-GB.mod_custom.ini</filename>
 		<filename>en-GB.mod_custom.sys.ini</filename>
-		<filename>en-GB.mod_finder.ini</filename>
-		<filename>en-GB.mod_finder.sys.ini</filename>
 		<filename>en-GB.mod_footer.ini</filename>
 		<filename>en-GB.mod_footer.sys.ini</filename>
 		<filename>en-GB.mod_languages.ini</filename>
