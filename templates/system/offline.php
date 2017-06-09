@@ -14,7 +14,6 @@ $app = JFactory::getApplication();
 // Add JavaScript Frameworks
 JHtml::_('bootstrap.framework');
 
-$twofactormethods = JAuthenticationHelper::getTwoFactorMethods();
 ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
@@ -55,12 +54,6 @@ $twofactormethods = JAuthenticationHelper::getTwoFactorMethods();
 			<label for="passwd"><?php echo JText::_('JGLOBAL_PASSWORD'); ?></label>
 			<input type="password" name="password" class="inputbox" alt="<?php echo JText::_('JGLOBAL_PASSWORD'); ?>" id="passwd" />
 		</p>
-		<?php if (count($twofactormethods) > 1) : ?>
-			<p id="form-login-secretkey">
-				<label for="secretkey"><?php echo JText::_('JGLOBAL_SECRETKEY'); ?></label>
-				<input type="text" name="secretkey" class="inputbox" alt="<?php echo JText::_('JGLOBAL_SECRETKEY'); ?>" id="secretkey" />
-			</p>
-		<?php endif; ?>
 		<p id="submit-buton">
 			<input type="submit" name="Submit" class="button login" value="<?php echo JText::_('JLOGIN'); ?>" />
 		</p>

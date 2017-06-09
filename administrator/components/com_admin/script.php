@@ -323,8 +323,6 @@ class JoomlaInstallerScript
 			array('plugin', 'categories', 'finder', 0),
 			array('plugin', 'content', 'finder', 0),
 			array('plugin', 'tags', 'finder', 0),
-			array('plugin', 'totp', 'twofactorauth', 0),
-			array('plugin', 'yubikey', 'twofactorauth', 0),
 			array('plugin', 'module', 'editors-xtd', 0),
 			array('plugin', 'stats', 'system', 0),
 			array('plugin', 'packageinstaller','installer',0),

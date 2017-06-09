@@ -40,8 +40,6 @@ class UsersViewUser extends JViewLegacy
 		$this->form      = $this->get('Form');
 		$this->item      = $this->get('Item');
 		$this->state     = $this->get('State');
-		$this->tfaform   = $this->get('Twofactorform');
-		$this->otpConfig = $this->get('otpConfig');
 
 		// Check for errors.
 		if (count($errors = $this->get('Errors')))

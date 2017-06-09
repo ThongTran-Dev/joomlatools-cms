@@ -48,9 +48,6 @@ class UsersViewProfile extends JViewLegacy
 		$this->form	            = $this->get('Form');
 		$this->state            = $this->get('State');
 		$this->params           = $this->state->get('params');
-		$this->twofactorform    = $this->get('Twofactorform');
-		$this->twofactormethods = UsersHelper::getTwoFactorMethods();
-		$this->otpConfig        = $this->get('OtpConfig');
 		$this->db               = JFactory::getDbo();
 
 		// Check for errors.

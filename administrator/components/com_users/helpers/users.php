@@ -162,27 +162,7 @@ class UsersHelper
 	 */
 	public static function getTwoFactorMethods()
 	{
-		FOFPlatform::getInstance()->importPlugin('twofactorauth');
-		$identities = FOFPlatform::getInstance()->runPlugins('onUserTwofactorIdentify', array());
-
-		$options = array(
-			JHtml::_('select.option', 'none', JText::_('JGLOBAL_OTPMETHOD_NONE'), 'value', 'text'),
-		);
-
-		if (!empty($identities))
-		{
-			foreach ($identities as $identity)
-			{
-				if (!is_object($identity))
-				{
-					continue;
-				}
-
-				$options[] = JHtml::_('select.option', $identity->method, $identity->title, 'value', 'text');
-			}
-		}
-
-		return $options;
+		return array();
 	}
 
 	/**
