@@ -7148,12 +7148,6 @@ body.site.fluid {
 .header {
 	margin-bottom: 10px;
 }
-.header .finder {
-	margin-top: 14px;
-}
-.header .finder .btn {
-	margin-top: 0px;
-}
 .navigation {
 	padding: 5px 0;
 	border-top: 1px solid rgba(0,0,0,0.075);
@@ -7656,12 +7650,6 @@ body.modal-open {
 }
 #search-results {
 	clear: both;
-}
-#finder-filter-window {
-	overflow: visible;
-}
-#finder-search .in.collapse {
-	overflow: visible;
 }
 .well select,
 .well .chzn-container {
