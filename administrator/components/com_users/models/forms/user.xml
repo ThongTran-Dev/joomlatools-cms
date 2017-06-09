@@ -136,7 +136,6 @@
 
 	</fieldset>
 	<field name="groups" type="hidden" />
-	<field name="twofactor" type="hidden" />
 
 	<fields name="params">
 

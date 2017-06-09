@@ -24,33 +24,10 @@ abstract class JAuthenticationHelper
 	 * @return  array  Two factor authentication methods.
 	 *
 	 * @since   3.6.3
+	 * @deprecated
 	 */
 	public static function getTwoFactorMethods()
 	{
-		// Get all the Two Factor Authentication plugins.
-		JPluginHelper::importPlugin('twofactorauth');
-
-		// Trigger onUserTwofactorIdentify event and return the two factor enabled plugins.
-		$identities = JEventDispatcher::getInstance()->trigger('onUserTwofactorIdentify', array());
-
-		// Generate array with two factor auth methods.
-		$options = array(
-			JHtml::_('select.option', 'none', JText::_('JGLOBAL_OTPMETHOD_NONE'), 'value', 'text'),
-		);
-
-		if (!empty($identities))
-		{
-			foreach ($identities as $identity)
-			{
-				if (!is_object($identity))
-				{
-					continue;
-				}
-
-				$options[] = JHtml::_('select.option', $identity->method, $identity->title, 'value', 'text');
-			}
-		}
-
-		return $options;
+		return array();
 	}
 }

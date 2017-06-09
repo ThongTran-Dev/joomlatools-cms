@@ -52,24 +52,6 @@ if ($langs)
 				</div>
 			</div>
 		</div>
-		<?php if (count($twofactormethods) > 1): ?>
-		<div class="control-group">
-			<div class="controls">
-				<div class="input-prepend input-append">
-					<span class="add-on">
-						<span class="icon-star hasTooltip" title="<?php echo JText::_('JGLOBAL_SECRETKEY'); ?>"></span>
-						<label for="mod-login-secretkey" class="element-invisible">
-							<?php echo JText::_('JGLOBAL_SECRETKEY'); ?>
-						</label>
-					</span>
-					<input name="secretkey" autocomplete="off" tabindex="3" id="mod-login-secretkey" type="text" class="input-medium" placeholder="<?php echo JText::_('JGLOBAL_SECRETKEY'); ?>" size="15"/>
-					<span class="btn width-auto hasTooltip" title="<?php echo JText::_('JGLOBAL_SECRETKEY_HELP'); ?>">
-						<span class="icon-help"></span>
-					</span>
-				</div>
-			</div>
-		</div>
-		<?php endif; ?>
 		<?php if (!empty($langs)) : ?>
 			<div class="control-group">
 				<div class="controls">

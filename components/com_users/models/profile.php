@@ -334,59 +334,6 @@ class UsersModelProfile extends JModelForm
 		// Unset the sendEmail so it does not get overwritten
 		unset($data['sendEmail']);
 
-		// Handle the two factor authentication setup
-		if (array_key_exists('twofactor', $data))
-		{
-			$model = new UsersModelUser;
-
-			$twoFactorMethod = $data['twofactor']['method'];
-
-			// Get the current One Time Password (two factor auth) configuration
-			$otpConfig = $model->getOtpConfig($userId);
-
-			if ($twoFactorMethod != 'none')
-			{
-				// Run the plugins
-				FOFPlatform::getInstance()->importPlugin('twofactorauth');
-				$otpConfigReplies = FOFPlatform::getInstance()->runPlugins('onUserTwofactorApplyConfiguration', array($twoFactorMethod));
-
-				// Look for a valid reply
-				foreach ($otpConfigReplies as $reply)
-				{
-					if (!is_object($reply) || empty($reply->method) || ($reply->method != $twoFactorMethod))
-					{
-						continue;
-					}
-
-					$otpConfig->method = $reply->method;
-					$otpConfig->config = $reply->config;
-
-					break;
-				}
-
-				// Save OTP configuration.
-				$model->setOtpConfig($userId, $otpConfig);
-
-				// Generate one time emergency passwords if required (depleted or not set)
-				if (empty($otpConfig->otep))
-				{
-					$oteps = $model->generateOteps($userId);
-				}
-			}
-			else
-			{
-				$otpConfig->method = 'none';
-				$otpConfig->config = array();
-				$model->setOtpConfig($userId, $otpConfig);
-			}
-
-			// Unset the raw data
-			unset($data['twofactor']);
-
-			// Reload the user record with the updated OTP configuration
-			$user->load($userId);
-		}
-
 		// Bind the data.
 		if (!$user->bind($data))
 		{
@@ -425,18 +372,11 @@ class UsersModelProfile extends JModelForm
 	 * @return  array
 	 *
 	 * @since   3.2
+	 * @deprecated
 	 */
 	public function getTwofactorform($user_id = null)
 	{
-		$user_id = (!empty($user_id)) ? $user_id : (int) $this->getState('user.id');
-
-		$model = new UsersModelUser;
-
-		$otpConfig = $model->getOtpConfig($user_id);
-
-		FOFPlatform::getInstance()->importPlugin('twofactorauth');
-
-		return FOFPlatform::getInstance()->runPlugins('onUserTwofactorShowConfiguration', array($otpConfig, $user_id));
+		return array();
 	}
 
 	/**
@@ -448,13 +388,10 @@ class UsersModelProfile extends JModelForm
 	 * @return  stdClass  An object holding the OTP configuration for this user
 	 *
 	 * @since   3.2
+	 * @deprecated
 	 */
 	public function getOtpConfig($user_id = null)
 	{
-		$user_id = (!empty($user_id)) ? $user_id : (int) $this->getState('user.id');
-
-		$model = new UsersModelUser;
-
-		return $model->getOtpConfig($user_id);
+		return null;
 	}
 }
