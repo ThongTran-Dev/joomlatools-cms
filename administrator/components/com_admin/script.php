@@ -199,7 +199,6 @@ class JoomlaInstallerScript
 			array('plugin', 'loadmodule', 'content', 0),
 			array('plugin', 'pagebreak', 'content', 0),
 			array('plugin', 'pagenavigation', 'content', 0),
-			array('plugin', 'vote', 'content', 0),
 			array('plugin', 'codemirror', 'editors', 0),
 			array('plugin', 'none', 'editors', 0),
 			array('plugin', 'tinymce', 'editors', 0),
