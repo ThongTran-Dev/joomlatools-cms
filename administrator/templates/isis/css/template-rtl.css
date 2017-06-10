@@ -8384,12 +8384,6 @@ body.modal-open {
 	padding: 5px 10px;
 	overflow: hidden;
 }
-.js-pstats-data-details dd {
-	margin-left: 240px;
-}
-.js-pstats-data-details dt {
-	width: 220px;
-}
 .modal-footer {
 	clear: both;
 }
@@ -9244,9 +9238,6 @@ a.grid_true {
 	.view-login select {
 		width: 229px;
 	}
-}
-.js-pstats-data-details dd {
-	margin-right: 240px;
 }
 .modal-footer button {
 	float: left;
