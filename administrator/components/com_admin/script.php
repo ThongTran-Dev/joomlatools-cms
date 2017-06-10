@@ -37,7 +37,6 @@ class JoomlaInstallerScript
 		$this->updateDatabase();
 		$this->clearRadCache();
 		$this->updateAssets();
-		$this->clearStatsCache();
 		$this->convertTablesToUtf8mb4(true);
 		$this->cleanJoomlaCache();
 
@@ -55,54 +54,7 @@ class JoomlaInstallerScript
 	 */
 	protected function clearStatsCache()
 	{
-		$db = JFactory::getDbo();
 
-		try
-		{
-			// Get the params for the stats plugin
-			$params = $db->setQuery(
-				$db->getQuery(true)
-					->select($db->quoteName('params'))
-					->from($db->quoteName('#__extensions'))
-					->where($db->quoteName('type') . ' = ' . $db->quote('plugin'))
-					->where($db->quoteName('folder') . ' = ' . $db->quote('system'))
-					->where($db->quoteName('element') . ' = ' . $db->quote('stats'))
-			)->loadResult();
-		}
-		catch (Exception $e)
-		{
-			echo JText::sprintf('JLIB_DATABASE_ERROR_FUNCTION_FAILED', $e->getCode(), $e->getMessage()) . '<br />';
-
-			return;
-		}
-
-		$params = json_decode($params, true);
-
-		// Reset the last run parameter
-		if (isset($params['lastrun']))
-		{
-			$params['lastrun'] = '';
-		}
-
-		$params = json_encode($params);
-
-		$query = $db->getQuery(true)
-			->update($db->quoteName('#__extensions'))
-			->set($db->quoteName('params') . ' = ' . $db->quote($params))
-			->where($db->quoteName('type') . ' = ' . $db->quote('plugin'))
-			->where($db->quoteName('folder') . ' = ' . $db->quote('system'))
-			->where($db->quoteName('element') . ' = ' . $db->quote('stats'));
-
-		try
-		{
-			$db->setQuery($query)->execute();
-		}
-		catch (Exception $e)
-		{
-			echo JText::sprintf('JLIB_DATABASE_ERROR_FUNCTION_FAILED', $e->getCode(), $e->getMessage()) . '<br />';
-
-			return;
-		}
 	}
 
 	/**
@@ -166,40 +118,6 @@ class JoomlaInstallerScript
 
 			break;
 		}
-	}
-
-	/**
-	 * Uninstall the 2.5 EOS plugin
-	 *
-	 * @return  void
-	 */
-	protected function uninstallEosPlugin()
-	{
-		$db = JFactory::getDbo();
-
-		// Check if the 2.5 EOS plugin is present and uninstall it if so
-		$id = $db->setQuery(
-			$db->getQuery(true)
-				->select('extension_id')
-				->from('#__extensions')
-				->where('name = ' . $db->quote('PLG_EOSNOTIFY'))
-		)->loadResult();
-
-		if (!$id)
-		{
-			return;
-		}
-
-		// We need to unprotect the plugin so we can uninstall it
-		$db->setQuery(
-			$db->getQuery(true)
-				->update('#__extensions')
-				->set('protected = 0')
-				->where($db->quoteName('extension_id') . ' = ' . $id)
-		)->execute();
-
-		$installer = new JInstaller;
-		$installer->uninstall('plugin', $id);
 	}
 
 	/**
@@ -311,7 +229,6 @@ class JoomlaInstallerScript
 			array('plugin', 'extensionupdate', 'quickicon', 0),
 			array('plugin', 'recaptcha', 'captcha', 0),
 			array('plugin', 'module', 'editors-xtd', 0),
-			array('plugin', 'stats', 'system', 0),
 			array('plugin', 'packageinstaller','installer',0),
 			array('plugin', 'folderinstaller','installer', 0),
 			array('plugin', 'urlinstaller','installer', 0),
