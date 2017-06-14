@@ -1301,14 +1301,6 @@ class JoomlaInstallerScript
 			'/administrator/components/com_config/controller/application/refreshhelp.php',
 			'/administrator/components/com_media/models/forms/index.html',
 			// Joomla 3.6.0
-			'/libraries/simplepie/README.txt',
-			'/libraries/simplepie/simplepie.php',
-			'/libraries/simplepie/LICENSE.txt',
-			'/libraries/simplepie/idn/LICENCE',
-			'/libraries/simplepie/idn/ReadMe.txt',
-			'/libraries/simplepie/idn/idna_convert.class.php',
-			'/libraries/simplepie/idn/npdata.ser',
-			'/administrator/manifests/libraries/simplepie.xml',
 			'/administrator/templates/isis/js/jquery.js',
 			'/administrator/templates/isis/js/bootstrap.min.js',
 			'/media/system/js/permissions.min.js',
@@ -1417,8 +1409,6 @@ class JoomlaInstallerScript
 			'/plugins/editors/tinymce/fields',
 			'/plugins/user/profile/fields',
 			// Joomla 3.6
-			'/libraries/simplepie/idn',
-			'/libraries/simplepie',
 			// Joomla! 3.6.3
 			'/media/editors/codemirror/mode/jade',
 		);

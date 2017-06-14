@@ -29,14 +29,14 @@ class ComposerStaticInit205c915b9c7d3e718e7c95793ee67ffe
     );
 
     public static $prefixLengthsPsr4 = array (
-        'S' => 
+        'S' =>
         array (
             'Symfony\\Polyfill\\Util\\' => 22,
             'Symfony\\Polyfill\\Php56\\' => 23,
             'Symfony\\Polyfill\\Php55\\' => 23,
             'Symfony\\Component\\Yaml\\' => 23,
         ),
-        'J' => 
+        'J' =>
         array (
             'Joomla\\Utilities\\Tests\\' => 23,
             'Joomla\\Utilities\\' => 17,
@@ -58,106 +58,99 @@ class ComposerStaticInit205c915b9c7d3e718e7c95793ee67ffe
     );
 
     public static $prefixDirsPsr4 = array (
-        'Symfony\\Polyfill\\Util\\' => 
+        'Symfony\\Polyfill\\Util\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-util',
         ),
-        'Symfony\\Polyfill\\Php56\\' => 
+        'Symfony\\Polyfill\\Php56\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php56',
         ),
-        'Symfony\\Polyfill\\Php55\\' => 
+        'Symfony\\Polyfill\\Php55\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php55',
         ),
-        'Symfony\\Component\\Yaml\\' => 
+        'Symfony\\Component\\Yaml\\' =>
         array (
             0 => __DIR__ . '/..' . '/symfony/yaml',
         ),
-        'Joomla\\Utilities\\Tests\\' => 
+        'Joomla\\Utilities\\Tests\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/utilities/Tests',
         ),
-        'Joomla\\Utilities\\' => 
+        'Joomla\\Utilities\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/utilities/src',
         ),
-        'Joomla\\Uri\\Tests\\' => 
+        'Joomla\\Uri\\Tests\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/uri/Tests',
         ),
-        'Joomla\\Uri\\' => 
+        'Joomla\\Uri\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/uri/src',
         ),
-        'Joomla\\String\\Tests\\' => 
+        'Joomla\\String\\Tests\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/string/Tests',
         ),
-        'Joomla\\String\\' => 
+        'Joomla\\String\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/string/src',
         ),
-        'Joomla\\Registry\\' => 
+        'Joomla\\Registry\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/registry/src',
         ),
-        'Joomla\\Input\\Tests\\' => 
+        'Joomla\\Input\\Tests\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/input/Tests',
         ),
-        'Joomla\\Input\\' => 
+        'Joomla\\Input\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/input/src',
         ),
-        'Joomla\\Filter\\Tests\\' => 
+        'Joomla\\Filter\\Tests\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/filter/Tests',
         ),
-        'Joomla\\Filter\\' => 
+        'Joomla\\Filter\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/filter/src',
         ),
-        'Joomla\\Event\\Tests\\' => 
+        'Joomla\\Event\\Tests\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/event/Tests',
         ),
-        'Joomla\\Event\\' => 
+        'Joomla\\Event\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/event/src',
         ),
-        'Joomla\\DI\\Tests\\' => 
+        'Joomla\\DI\\Tests\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/di/Tests',
         ),
-        'Joomla\\DI\\' => 
+        'Joomla\\DI\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/di/src',
         ),
-        'Joomla\\Application\\' => 
+        'Joomla\\Application\\' =>
         array (
             0 => __DIR__ . '/..' . '/joomla/application/src',
         ),
     );
 
     public static $prefixesPsr0 = array (
-        'S' => 
+        'P' =>
         array (
-            'SimplePie' => 
-            array (
-                0 => __DIR__ . '/..' . '/simplepie/simplepie/library',
-            ),
-        ),
-        'P' => 
-        array (
-            'Psr\\Log\\' => 
+            'Psr\\Log\\' =>
             array (
                 0 => __DIR__ . '/..' . '/psr/log',
             ),
         ),
-        'J' => 
+        'J' =>
         array (
-            'Joomla\\Session' => 
+            'Joomla\\Session' =>
             array (
                 0 => __DIR__ . '/..' . '/joomla/session',
             ),
