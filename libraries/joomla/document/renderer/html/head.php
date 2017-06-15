@@ -46,13 +46,6 @@ class JDocumentRendererHtmlHead extends JDocumentRenderer
 	 */
 	public function fetchHead($document)
 	{
-		// Convert the tagids to titles
-		if (isset($document->_metaTags['name']['tags']))
-		{
-			$tagsHelper = new JHelperTags;
-			$document->_metaTags['name']['tags'] = implode(', ', $tagsHelper->getTagNames($document->_metaTags['name']['tags']));
-		}
-
 		// Trigger the onBeforeCompileHead event
 		$app = JFactory::getApplication();
 		$app->triggerEvent('onBeforeCompileHead');
