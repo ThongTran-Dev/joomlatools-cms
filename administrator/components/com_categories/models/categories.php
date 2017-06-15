@@ -42,8 +42,7 @@ class CategoriesModelCategories extends JModelList
 				'lft', 'a.lft',
 				'rgt', 'a.rgt',
 				'level', 'a.level',
-				'path', 'a.path',
-				'tag',
+				'path', 'a.path'
 			);
 		}
 
@@ -95,7 +94,6 @@ class CategoriesModelCategories extends JModelList
 		$this->setState('filter.published', $this->getUserStateFromRequest($this->context . '.filter.published', 'filter_published', '', 'string'));
 		$this->setState('filter.access', $this->getUserStateFromRequest($this->context . '.filter.access', 'filter_access', '', 'cmd'));
 		$this->setState('filter.language', $this->getUserStateFromRequest($this->context . '.filter.language', 'filter_language', '', 'string'));
-		$this->setState('filter.tag', $this->getUserStateFromRequest($this->context . '.filter.tag', 'filter_tag', '', 'string'));
 		$this->setState('filter.level', $this->getUserStateFromRequest($this->context . '.filter.level', 'filter_level', '', 'string'));
 
 		// List state information.
@@ -130,7 +128,6 @@ class CategoriesModelCategories extends JModelList
 		$id .= ':' . $this->getState('filter.access');
 		$id .= ':' . $this->getState('filter.language');
 		$id .= ':' . $this->getState('filter.level');
-		$id .= ':' . $this->getState('filter.tag');
 
 		return parent::getStoreId($id);
 	}
@@ -245,19 +242,6 @@ class CategoriesModelCategories extends JModelList
 		if ($language = $this->getState('filter.language'))
 		{
 			$query->where('a.language = ' . $db->quote($language));
-		}
-
-		// Filter by a single tag.
-		$tagId = $this->getState('filter.tag');
-
-		if (is_numeric($tagId))
-		{
-			$query->where($db->quoteName('tagmap.tag_id') . ' = ' . (int) $tagId)
-				->join(
-					'LEFT', $db->quoteName('#__contentitem_tag_map', 'tagmap')
-					. ' ON ' . $db->quoteName('tagmap.content_item_id') . ' = ' . $db->quoteName('a.id')
-					. ' AND ' . $db->quoteName('tagmap.type_alias') . ' = ' . $db->quote($extension . '.category')
-				);
 		}
 
 		// Add the list ordering clause

@@ -48,9 +48,4 @@ $extension = $this->escape($this->state->get('filter.extension'));
 			</div>
 		</div>
 	<?php endif; ?>
-	<div class="control-group span6">
-		<div class="controls">
-			<?php echo JHtml::_('batch.tag'); ?>
-		</div>
-	</div>
 </div>
