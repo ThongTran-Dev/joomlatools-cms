@@ -483,26 +483,7 @@ class JComponentHelper
 			return false;
 		}
 
-		if (empty(static::$components[$option]))
-		{
-			/*
-			 * Fatal error
-			 *
-			 * It is possible for this error to be reached before the global JLanguage instance has been loaded so we check for its presence
-			 * before logging the error to ensure a human friendly message is always given
-			 */
-
-			if (JFactory::$language)
-			{
-				$msg = JText::sprintf('JLIB_APPLICATION_ERROR_COMPONENT_NOT_LOADING', $option, JText::_('JLIB_APPLICATION_ERROR_COMPONENT_NOT_FOUND'));
-			}
-			else
-			{
-				$msg = sprintf('Error loading component: %1$s, %2$s', $option, 'Component not found.');
-			}
-
-			JLog::add($msg, JLog::WARNING, 'jerror');
-
+		if (empty(static::$components[$option])) {
 			return false;
 		}
 
