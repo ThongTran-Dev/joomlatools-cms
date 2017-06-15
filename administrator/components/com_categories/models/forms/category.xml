@@ -219,15 +219,6 @@
 	</field>
 
 	<field
-		name="tags"
-		type="tag"
-		label="JTAG"
-		description="JTAG_DESC"
-		class="span12"
-		multiple="true"
-	/>
-
-	<field
 		name="rules"
 		type="rules"
 		label="JFIELD_RULES_LABEL"
@@ -259,7 +250,7 @@
 				description="COM_CATEGORIES_FIELD_IMAGE_DESC"
 			/>
 
-			<field 
+			<field
 				name="image_alt"
 				type="text"
 				label="COM_CATEGORIES_FIELD_IMAGE_ALT_LABEL"
