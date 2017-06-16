@@ -117,11 +117,6 @@ class TagsViewTag extends JViewLegacy
 				JToolbarHelper::save2copy('tag.save2copy');
 			}
 
-			if ($this->state->params->get('save_history', 0) && $itemEditable)
-			{
-				JToolbarHelper::versions('com_tags.tag', $this->item->id);
-			}
-
 			JToolbarHelper::cancel('tag.cancel', 'JTOOLBAR_CLOSE');
 		}
 
