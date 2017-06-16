@@ -181,8 +181,7 @@ class JSessionHandlerNative implements JSessionHandlerInterface
 	public function save()
 	{
 		// Verify if the session is active
-		if ((version_compare(PHP_VERSION, '5.4', 'ge') && PHP_SESSION_ACTIVE === session_status())
-			|| (version_compare(PHP_VERSION, '5.4', 'lt') && $this->started && isset($_SESSION) && $this->getId()))
+		if (PHP_SESSION_ACTIVE === session_status())
 		{
 			$session = JFactory::getSession();
 			$data    = $session->getData();
@@ -238,15 +237,9 @@ class JSessionHandlerNative implements JSessionHandlerInterface
 		 */
 
 		// If running PHP 5.4, try to use the native API
-		if (version_compare(PHP_VERSION, '5.4', 'ge') && PHP_SESSION_ACTIVE === session_status())
+		if (PHP_SESSION_ACTIVE === session_status())
 		{
 			throw new RuntimeException('Failed to start the session: already started by PHP.');
-		}
-
-		// Fallback check for PHP 5.3
-		if (version_compare(PHP_VERSION, '5.4', 'lt') && !$this->closed && isset($_SESSION) && $this->getId())
-		{
-			throw new RuntimeException('Failed to start the session: already started by PHP ($_SESSION is set).');
 		}
 
 		// If we are using cookies (default true) and headers have already been started (early output),
