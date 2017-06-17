@@ -276,7 +276,6 @@ final class InstallationApplicationWeb extends JApplicationCms
 
 		$ret['language']   = (string) $xml->forceLang;
 		$ret['debug']      = (string) $xml->debug;
-		$ret['sampledata'] = (string) $xml->sampledata;
 
 		return $ret;
 	}
@@ -429,7 +428,6 @@ final class InstallationApplicationWeb extends JApplicationCms
 		// Set the language in the class.
 		$this->config->set('language', $options['language']);
 		$this->config->set('debug_lang', $forced['debug']);
-		$this->config->set('sampledata', $forced['sampledata']);
 	}
 
 	/**
