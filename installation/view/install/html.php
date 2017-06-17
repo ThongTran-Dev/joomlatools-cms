@@ -58,11 +58,6 @@ class InstallationViewInstallHtml extends JViewHtml
 		$this->tasks[] = ($this->options['db_old'] == 'remove') ? 'Database_remove' : 'Database_backup';
 		$this->tasks[] = 'Database';
 
-		if ($this->options['sample_file'])
-		{
-			$this->tasks[] = 'Sample';
-		}
-
 		$this->tasks[] = 'Config';
 
 		if ($this->options['summary_email'])

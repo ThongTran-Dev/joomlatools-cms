@@ -28,20 +28,6 @@ $prev = $useftp ? 'ftp' : 'database';
 	<h3><?php echo JText::_('INSTL_FINALISATION'); ?></h3>
 	<hr class="hr-condensed" />
 
-	<div class="control-group">
-		<div class="control-label">
-			<?php echo $this->form->getLabel('sample_file'); ?>
-		</div>
-		<div class="controls">
-			<div class="help-block">
-				<?php echo $this->form->getInput('sample_file'); ?>
-			</div>
-			<p class="help-block">
-				<?php echo JText::_('INSTL_SITE_INSTALL_SAMPLE_DESC'); ?>
-			</p>
-		</div>
-	</div>
-
 	<h3><?php echo JText::_('INSTL_STEP_SUMMARY_LABEL'); ?></h3>
 	<hr class="hr-condensed" />
 
