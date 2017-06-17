@@ -497,43 +497,39 @@ class InstallationModelDatabase extends JModelBase
 
 		$files = JFolder::files($pathPart, '\.sql$');
 
-		if (empty($files))
+		if (!empty($files))
 		{
-			JFactory::getApplication()->enqueueMessage(JText::_('INSTL_ERROR_INITIALISE_SCHEMA'), 'error');
+			$version = '';
 
-			return false;
-		}
-
-		$version = '';
-
-		foreach ($files as $file)
-		{
-			if (version_compare($version, JFile::stripExt($file)) < 0)
+			foreach ($files as $file)
 			{
-				$version = JFile::stripExt($file);
+				if (version_compare($version, JFile::stripExt($file)) < 0)
+				{
+					$version = JFile::stripExt($file);
+				}
 			}
-		}
 
-		$query->clear()
-			->insert($db->quoteName('#__schemas'))
-			->columns(
-				array(
-					$db->quoteName('extension_id'),
-					$db->quoteName('version_id')
+			$query->clear()
+				->insert($db->quoteName('#__schemas'))
+				->columns(
+					array(
+						$db->quoteName('extension_id'),
+						$db->quoteName('version_id')
+					)
 				)
-			)
-			->values('700, ' . $db->quote($version));
-		$db->setQuery($query);
+				->values('700, ' . $db->quote($version));
+			$db->setQuery($query);
 
-		try
-		{
-			$db->execute();
-		}
-		catch (RuntimeException $e)
-		{
-			JFactory::getApplication()->enqueueMessage($e->getMessage(), 'error');
+			try
+			{
+				$db->execute();
+			}
+			catch (RuntimeException $e)
+			{
+				JFactory::getApplication()->enqueueMessage($e->getMessage(), 'error');
 
-			return false;
+				return false;
+			}
 		}
 
 		// Attempt to refresh manifest caches.

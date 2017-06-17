@@ -190,11 +190,6 @@ class JoomlaInstallerScript
 			array('module', 'mod_multilangstatus', '', 1),
 
 			// Plugins
-			array('plugin', 'gmail', 'authentication', 0),
-			array('plugin', 'joomla', 'authentication', 0),
-			array('plugin', 'ldap', 'authentication', 0),
-			array('plugin', 'contact', 'content', 0),
-			array('plugin', 'emailcloak', 'content', 0),
 			array('plugin', 'loadmodule', 'content', 0),
 			array('plugin', 'pagebreak', 'content', 0),
 			array('plugin', 'pagenavigation', 'content', 0),
@@ -209,7 +204,6 @@ class JoomlaInstallerScript
 			array('plugin', 'content', 'search', 0),
 			array('plugin', 'tags', 'search', 0),
 			array('plugin', 'languagefilter', 'system', 0),
-			array('plugin', 'p3p', 'system', 0),
 			array('plugin', 'cache', 'system', 0),
 			array('plugin', 'debug', 'system', 0),
 			array('plugin', 'log', 'system', 0),
@@ -217,7 +211,6 @@ class JoomlaInstallerScript
 			array('plugin', 'remember', 'system', 0),
 			array('plugin', 'sef', 'system', 0),
 			array('plugin', 'logout', 'system', 0),
-			array('plugin', 'contactcreator', 'user', 0),
 			array('plugin', 'joomla', 'user', 0),
 			array('plugin', 'profile', 'user', 0),
 			array('plugin', 'joomla', 'extension', 0),
