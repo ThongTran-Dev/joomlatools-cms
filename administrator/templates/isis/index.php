@@ -85,19 +85,6 @@ $header_color = ($displayHeader && $this->params->get('headerColor')) ? $this->p
 $navbar_is_light = ($navbar_color && colorIsLight($navbar_color));
 $header_is_light = ($header_color && colorIsLight($header_color));
 
-if ($displayHeader)
-{
-	// Logo file
-	if ($this->params->get('logoFile'))
-	{
-		$logo = JUri::root() . $this->params->get('logoFile');
-	}
-	else
-	{
-		$logo = $this->baseurl . '/templates/' . $this->template . '/images/logo' . ($header_is_light ? '-inverse' : '') . '.png';
-	}
-}
-
 function colorIsLight($color)
 {
 	$r = hexdec(substr($color, 1, 2));
@@ -243,9 +230,6 @@ if ($this->params->get('linkColor'))
 <!-- Header -->
 <?php if ($displayHeader) : ?>
 	<header class="header<?php echo $header_is_light ? ' header-inverse' : ''; ?>">
-		<div class="container-logo">
-			<img src="<?php echo $logo; ?>" class="logo" alt="<?php echo $sitename;?>" />
-		</div>
 		<div class="container-title">
 			<jdoc:include type="modules" name="title" />
 		</div>

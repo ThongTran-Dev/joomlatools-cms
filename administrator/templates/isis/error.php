@@ -55,16 +55,6 @@ foreach ($this->submenumodules as $submenumodule)
 	}
 }
 
-// Logo file
-if ($params->get('logoFile'))
-{
-	$logo = JUri::root() . $params->get('logoFile');
-}
-else
-{
-	$logo = $this->baseurl . '/templates/' . $this->template . '/images/logo.png';
-}
-
 // Template Parameters
 $displayHeader = $params->get('displayHeader', '1');
 $statusFixed   = $params->get('statusFixed', '1');
@@ -190,11 +180,6 @@ $stickyToolbar = $params->get('stickyToolbar', '1');
 	</nav>
 	<!-- Header -->
 	<header class="header">
-		<?php if ($displayHeader) : ?>
-		<div class="container-logo">
-			<img src="<?php echo $logo; ?>" class="logo" />
-		</div>
-		<?php endif; ?>
 		<div class="container-title">
 			<h1 class="page-title"><?php echo JText::_('ERROR'); ?></h1>
 		</div>
