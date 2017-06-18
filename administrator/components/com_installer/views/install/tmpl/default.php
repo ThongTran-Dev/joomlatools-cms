@@ -25,24 +25,16 @@ JFactory::getDocument()->addScriptDeclaration(
 		else
 		{
 			jQuery("#loading").css("display", "block");
-			
+
 			form.installtype.value = "url";
 			form.submit();
 		}
 	};
 
-	Joomla.submitbuttonInstallWebInstaller = function() {
-		var form = document.getElementById("adminForm");
-		
-		form.install_url.value = "https://appscdn.joomla.org/webapps/jedapps/webinstaller.xml";
-		
-		Joomla.submitbutton4();
-	};
-
 	// Add spindle-wheel for installations:
 	jQuery(document).ready(function($) {
 		var outerDiv = $("#installer-install");
-		
+
 		$("#loading")
 		.css("top", outerDiv.position().top - $(window).scrollTop())
 		.css("left", "0")
@@ -64,7 +56,7 @@ JFactory::getDocument()->addStyleDeclaration(
 		filter: alpha(opacity = 80);
 		overflow: hidden;
 	}
-	
+
 	.j-jed-message {
 		margin-bottom: 40px;
 		line-height: 2em;
@@ -104,22 +96,6 @@ JFactory::getDocument()->addStyleDeclaration(
 				<!-- Render messages set by extension install scripts here -->
 				<?php if ($this->showMessage) : ?>
 					<?php echo $this->loadTemplate('message'); ?>
-				<?php elseif ($this->showJedAndWebInstaller) : ?>
-					<div class="alert alert-info j-jed-message"
-						style="margin-bottom: 40px; line-height: 2em; color:#333333;">
-						<?php echo JHtml::_(
-							'link',
-							JRoute::_('index.php?option=com_config&view=component&component=com_installer&path=&return=' . urlencode(base64_encode(JUri::getInstance()))),
-							'',
-							'class="alert-options hasTooltip icon-options" data-dismiss="alert" title="' . str_replace('"', '&quot;', JText::_('COM_INSTALLER_SHOW_JED_INFORMATION_TOOLTIP')) . '"'
-						);
-						?>
-						<p><?php echo JText::_('COM_INSTALLER_INSTALL_FROM_WEB_INFO'); ?>
-							<?php echo JText::_('COM_INSTALLER_INSTALL_FROM_WEB_TOS'); ?></p>
-						<input class="btn" type="button"
-							value="<?php echo JText::_('COM_INSTALLER_INSTALL_FROM_WEB_ADD_TAB'); ?>"
-							onclick="Joomla.submitbuttonInstallWebInstaller()"/>
-					</div>
 				<?php endif; ?>
 				<?php echo JHtml::_('bootstrap.startTabSet', 'myTab'); ?>
 				<?php // Show installation tabs at the start ?>
