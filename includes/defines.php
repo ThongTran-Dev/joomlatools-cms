@@ -8,6 +8,9 @@
 
 defined('_JEXEC') or die;
 
+//Define the platform
+define('JOOMLATOOLS_CMS', 1);
+
 // Global definitions
 $parts = explode(DIRECTORY_SEPARATOR, JPATH_BASE);
 
