@@ -8,7 +8,7 @@
 
 defined('_JEXEC') or die;
 
-//Define the platform
+//Define the distro version
 define('JOOMLATOOLS_CMS', '0.1.0');
 
 // Global definitions
