@@ -9,6 +9,9 @@
 
 defined('_JEXEC') or die;
 
+//Define the distro version
+define('JOOMLATOOLS_CMS', '0.1.0');
+
 // Global definitions
 $parts = explode(DIRECTORY_SEPARATOR, JPATH_BASE);
 array_pop($parts);
