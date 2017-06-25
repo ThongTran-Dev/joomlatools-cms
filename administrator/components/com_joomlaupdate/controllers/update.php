@@ -31,7 +31,7 @@ class JoomlaupdateControllerUpdate extends JControllerLegacy
 		$options['text_file'] = 'joomla_update.php';
 		JLog::addLogger($options, JLog::INFO, array('Update', 'databasequery', 'jerror'));
 		$user = JFactory::getUser();
-		JLog::add(JText::sprintf('COM_JOOMLAUPDATE_UPDATE_LOG_START', $user->id, $user->name, JVERSION), JLog::INFO, 'Update');
+		JLog::add(JText::sprintf('COM_JOOMLAUPDATE_UPDATE_LOG_START', $user->id, $user->name, JOOMLATOOLS_CMS), JLog::INFO, 'Update');
 
 		$this->_applyCredentials();
 
@@ -154,7 +154,7 @@ class JoomlaupdateControllerUpdate extends JControllerLegacy
 
 		$url = 'index.php?option=com_joomlaupdate&view=default&layout=complete';
 		$this->setRedirect($url);
-		JLog::add(JText::sprintf('COM_JOOMLAUPDATE_UPDATE_LOG_COMPLETE', JVERSION), JLog::INFO, 'Update');
+		JLog::add(JText::sprintf('COM_JOOMLAUPDATE_UPDATE_LOG_COMPLETE', JOOMLATOOLS_CMS), JLog::INFO, 'Update');
 	}
 
 	/**

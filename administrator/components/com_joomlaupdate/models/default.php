@@ -114,7 +114,7 @@ class JoomlaupdateModelDefault extends JModelLegacy
 	{
 		// Initialise the return array.
 		$ret = array(
-			'installed' => JVERSION,
+			'installed' => JOOMLATOOLS_CMS,
 			'latest'    => null,
 			'object'    => null,
 			'hasUpdate' => false
@@ -131,13 +131,13 @@ class JoomlaupdateModelDefault extends JModelLegacy
 
 		if (is_null($updateObject))
 		{
-			$ret['latest'] = JVERSION;
+			$ret['latest'] = JOOMLATOOLS_CMS;
 
 			return $ret;
 		}
 
 		$ret['latest']    = $updateObject->version;
-		$ret['hasUpdate'] = $updateObject->version != JVERSION;
+		$ret['hasUpdate'] = $updateObject->version != JOOMLATOOLS_CMS;
 
 		// Fetch the full update details from the update details URL.
 		jimport('joomla.updater.update');

@@ -890,7 +890,6 @@ CREATE TABLE IF NOT EXISTS `#__update_sites_extensions` (
 
 INSERT INTO `#__update_sites_extensions` (`update_site_id`, `extension_id`) VALUES
 (1, 700),
-(2, 700),
 (3, 802),
 (4, 28);
 

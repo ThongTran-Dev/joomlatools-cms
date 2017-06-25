@@ -250,9 +250,9 @@ class JResponse
 		self::setHeader('Content-Encoding', $encoding);
 
 		// Header will be removed at 4.0
-		if (JFactory::getConfig()->get('MetaVersion', 0) && defined('JVERSION'))
+		if (JFactory::getConfig()->get('MetaVersion', 0) && defined('JOOMLATOOLS_CMS'))
 		{
-			self::setHeader('X-Content-Encoded-By', 'Joomla! ' . JVERSION);
+			self::setHeader('X-Content-Encoded-By', 'Joomlatools CMS ' . JOOMLATOOLS_CMS);
 		}
 
 		return $gzdata;
