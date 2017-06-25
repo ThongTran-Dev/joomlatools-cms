@@ -868,9 +868,9 @@ CREATE TABLE IF NOT EXISTS `#__update_sites` (
 --
 
 INSERT INTO `#__update_sites` (`update_site_id`, `name`, `type`, `location`, `enabled`, `last_check_timestamp`) VALUES
-(1, 'Joomla! Core', 'collection', 'https://update.joomla.org/core/list.xml', 1, 0),
-(3, 'Accredited Joomla! Translations', 'collection', 'https://update.joomla.org/language/translationlist_3.xml', 1, 0),
-(4, 'Joomla! Update Component Update Site', 'extension', 'https://update.joomla.org/core/extensions/com_joomlaupdate.xml', 1, 0);
+(1, 'Joomlatools CMS', 'collection', 'https://api.joomlatools.com/cms/core.xml', 1, 0),
+(3, 'Joomla Translations', 'collection', 'https://update.joomla.org/language/translationlist_3.xml', 1, 0),
+(4, 'Joomlatools Updater', 'extension', 'https://update.joomla.org/core/extensions/com_joomlaupdate.xml', 1, 0);
 
 -- --------------------------------------------------------
 

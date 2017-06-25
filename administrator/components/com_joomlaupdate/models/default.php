@@ -34,7 +34,7 @@ class JoomlaupdateModelDefault extends JModelLegacy
 
 		// Hard coded update UL for Joomlatools CMS
 		// Johan Janssens - 18/06/2017
-		$updateURL = 'https://update.joomla.org/core/list.xml';
+		$updateURL = 'https://api.joomlatools.com/cms/core.xml';
 
 		$db = $this->getDbo();
 		$query = $db->getQuery(true)
