@@ -314,6 +314,8 @@ class AdminModelSysInfo extends JModelLegacy
 			'version'               => $version->getLongVersion(),
 			'platform'              => $platform->getLongVersion(),
 			'useragent'             => isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : "",
+			'distro_name'			=> 'Joomlatools Cms',
+			'distro_version'		=> JOOMLATOOLS_CMS
 		);
 
 		return $this->info;

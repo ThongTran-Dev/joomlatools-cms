@@ -86,6 +86,14 @@ defined('_JEXEC') or die;
 			</tr>
 			<tr>
 				<td>
+					<strong><?php echo $this->info['distro_name']; ?></strong>
+				</td>
+				<td>
+					<?php echo $this->info['distro_version']; ?>
+				</td>
+			</tr>
+			<tr>
+				<td>
 					<strong><?php echo JText::_('COM_ADMIN_JOOMLA_VERSION'); ?></strong>
 				</td>
 				<td>
