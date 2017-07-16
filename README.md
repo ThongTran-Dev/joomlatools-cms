@@ -1,7 +1,7 @@
 Joomlatools CMS
 ===============
 
-Joomlatools CMS is a packaged distribution of Joomla focussed on web pubkishing. It enables professionals and agencies 
+Joomlatools CMS is a packaged distribution of Joomla focussed on web publishing. It enables professionals and agencies 
 to create a great authoring experience and empower editorional teams, by providing a lightweight framework, documentation 
 and best practice examples.
 
