@@ -1,9 +1,9 @@
 {
-    "name": "joomla/joomla-cms",
+    "name": "joomlatools/joomlatools-cms",
     "type": "project",
-    "description": "Joomla CMS",
-    "keywords": ["joomla", "cms"],
-    "homepage": "https://github.com/joomla/joomla-cms",
+    "description": "Joomlatools Cms",
+    "keywords": ["joomla", "joomlatools", "cms"],
+    "homepage": "https://github.com/joomlatools/joomlatools-cms",
     "license": "GPL-3.0",
     "config": {
         "platform": {
@@ -12,10 +12,9 @@
         "vendor-dir": "libraries/vendor"
     },
     "support": {
-        "issues":"https://issues.joomla.org",
-        "irc":"http://irc.lc/freenode/joomla/",
-        "forum":"http://forum.joomla.org/",
-        "docs":"https://docs.joomla.org"
+        "issues":"https://github.com/joomlatools/joomlatools-cms/issues",
+        "chat":"http://gitter.com/joomlatools/dev",
+        "forum":"https://groups.google.com/forum/#!forum/joomlatools-dev"
     },
     "require": {
         "php": ">=7.0.0",
